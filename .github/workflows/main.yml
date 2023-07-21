@@ -1,0 +1,23 @@
+- name: Psalm – Static Analysis for PHP
+  # You may pin to the exact commit or the version.
+  # uses: psalm/psalm-github-actions@5c33a1b1a761341655ee4c7581fbf629db969d4e
+  uses: psalm/psalm-github-actions@2.3.0
+  with:
+    # Whether or not to use Psalm’s security analysis
+    security_analysis: # optional, default is false
+    # Whether or not to show non-exception parser findings
+    show_info: # optional, default is false
+    # File for Psalm’s output
+    report_file: # optional, default is 
+    # Whether or not Composer installs dev packages
+    composer_require_dev: # optional, default is false
+    # Whether or not the --ignore-platform-reqs flag is passed to Composer
+    composer_ignore_platform_reqs: # optional, default is false
+    # The private key contents to use for private repositories
+    ssh_key: # optional
+    # The public key contents to use for private repositories
+    ssh_key_pub: # optional
+    # The domain to gather SSH public keys for (automatic for github.com, gitlab.com, bitbucket.org)
+    ssh_domain: # optional
+    # If your composer file is not in the directory, you can specify the relative directory.
+    relative_dir: # optional
